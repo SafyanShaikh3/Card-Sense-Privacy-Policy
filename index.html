@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardSense — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the CardSense Android app. All data stays on your device.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1d24;
+    --muted: #5c6472;
+    --rule: #e3e6ec;
+    --accent: #1f5fd0;
+    --card: #f6f8fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1017;
+      --fg: #e8eaf0;
+      --muted: #9aa3b2;
+      --rule: #232834;
+      --accent: #7da8f5;
+      --card: #151a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 40px 0 12px;
+    letter-spacing: -0.005em;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 28px 0;
+  }
+  .callout p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--card);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>CardSense Privacy Policy</h1>
+  <p class="sub">Last updated: 23 October 2026 &middot; Applies to the CardSense Android app (<code>com.ledgerandline.ccem</code>)</p>
+</header>
+
+<div class="callout">
+  <p><strong>In short:</strong> CardSense does not collect, transmit, or share any personal data. There is no account, no sign-in, and no server. Everything you enter stays in the app's private storage on your own phone.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>CardSense is an offline credit card and expense tracking app for Android, published by the individual developer listed at the end of this policy. This policy explains what the app does and does not do with your information.</p>
+
+<h2>2. Information we collect</h2>
+<p><strong>We collect nothing.</strong> The developer has no servers, no analytics, and no way to see anything you type into the app. No data leaves your device as a result of using CardSense.</p>
+
+<h2>3. Information you store on your own device</h2>
+<p>To do its job, the app saves the following locally, in Android's private per-app storage area:</p>
+<ul>
+  <li>Your name or nickname and, optionally, an email address you type during first-launch setup</li>
+  <li>Card details you choose to add: a label, issuer, credit limit, billing cycle dates, payment due dates, and <strong>only the last four digits</strong> of the card number</li>
+  <li>Transactions, categories, notes, and monthly budgets you create or import</li>
+  <li>Your app preferences, including currency and notification settings</li>
+  <li>A salted SHA-256 hash of your app PIN, if you set one &mdash; the PIN itself is never stored</li>
+</ul>
+<p>CardSense never asks for and never stores a full card number, CVV, card PIN, bank password, or any bank login credential. It is not connected to any bank, card issuer, or payment network, and it cannot move money.</p>
+
+<h2>4. Permissions and why they are needed</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>To show your payment-due and budget reminders on your phone. Requested at the end of setup; you can decline or revoke it at any time.</td></tr>
+  <tr><td><code>USE_BIOMETRIC</code></td><td>To let you unlock the app with your fingerprint or face. Biometric matching is performed entirely by Android; the app never receives or stores your biometric data.</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>Haptic feedback for reminders.</td></tr>
+  <tr><td><code>WRITE_EXTERNAL_STORAGE</code></td><td>Only on Android 9 and older, and only to save a report or backup file you explicitly export. Not used on Android 10 or newer.</td></tr>
+  <tr><td><code>INTERNET</code></td><td>Declared for the app's internal WebView component. All of the app's fonts, charting, and spreadsheet code is bundled inside the app itself, so the app makes no network requests and sends no data anywhere.</td></tr>
+</table>
+
+<h2>5. Sharing and third parties</h2>
+<p>We do not sell, rent, or share your information, because we never receive it. CardSense contains no advertising, no analytics or crash-reporting SDKs, no social media SDKs, and no third-party trackers of any kind.</p>
+
+<h2>6. Backups and exports</h2>
+<p>Android's automatic cloud backup is switched off for this app, so your CardSense data is not copied to Google Drive or anywhere else without your action. If you use <em>Backup &amp; Restore</em> or export a CSV, Excel, or PDF-style report, the resulting file is written where you choose and is then entirely under your control. Anything you then upload, email, or share from that file is governed by the privacy policy of the service you send it to, not this one.</p>
+
+<h2>7. Data retention and deletion</h2>
+<p>Your data stays on your device until you remove it. You can delete individual cards, transactions, or budgets inside the app, or erase everything at once by clearing the app's data in Android Settings or uninstalling CardSense. Because there is no server copy, uninstalling permanently deletes your data &mdash; export a backup first if you want to keep it. We cannot recover data for you, as we never had it.</p>
+
+<h2>8. Security</h2>
+<p>Your data is held in the app's sandboxed private storage, which other apps cannot read. You can additionally protect the app with a 4-digit PIN (stored only as a salted SHA-256 hash) and with fingerprint or face unlock, and the app can hide its contents in the recent-apps screen. Please note that no safeguard can protect data on a device that is rooted, shared, or left unlocked.</p>
+
+<h2>9. Children</h2>
+<p>CardSense is a personal finance tool intended for adults and is not directed at children under 13. We do not knowingly collect information from anyone, including children.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this same address with a new "last updated" date. Material changes will also be noted in the app's release notes on Google Play.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy or about privacy in CardSense can be sent to <a href="mailto:safyanshaikh009@gmail.com">safyanshaikh009@gmail.com</a>.</p>
+
+<footer>
+  CardSense &mdash; Smart Credit Card Expense Management. CardSense is an independent app and is not affiliated with, endorsed by, or sponsored by any bank, card issuer, or payment network.
+</footer>
+
+</div>
+</body>
+</html>
